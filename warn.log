@@ -1,0 +1,4 @@
+2023-05-23 10:32:45,384 [WARN] This is a warning message
+2023-05-23 10:32:45,386 [INFO] This is an info message
+2023-05-23 10:32:45,386 [WARN] New warning message after renaming
+2023-05-23 10:32:45,386 [INFO] New info message after renaming

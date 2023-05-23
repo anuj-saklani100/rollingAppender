@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <RollingFile name="warnAppender" fileName="warn.log" filePattern="warn.log.%i">
+            <PatternLayout pattern="%d [%p] %m%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </RollingFile>
+        <RollingFile name="infoAppender" fileName="info.log" filePattern="info.log.%i">
+            <PatternLayout pattern="%d [%p] %m%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="warnAppender"/>
+            <AppenderRef ref="infoAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
